@@ -30,10 +30,14 @@ The sign of the [gamma-function][@stdlib/math/base/special/gamma] is defined as
 
 <!-- <equation class="equation" label="eq:gamma_sign_function" align="center" raw="\operatorname{gammasgn} ( x ) = \begin{cases} 1 & \textrm{if}\ \Gamma > 1 \\ -1 & \textrm{if}\ \Gamma < 1 \\ 0 & \textrm{otherwise}\ \end{cases}" alt="Sign of the gamma function"> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{gammasgn} ( x ) = \begin{cases} 1 &amp; \textrm{if}\ \Gamma &gt; 1 \\ -1 &amp; \textrm{if}\ \Gamma &lt; 1 \\ 0 &amp; \textrm{otherwise}\ \end{cases}" data-equation="eq:gamma_sign_function">
+```math
+\operatorname{gammasgn} ( x ) = \begin{cases} 1 & \textrm{if}\ \Gamma > 1 \\ -1 & \textrm{if}\ \Gamma < 1 \\ 0 & \textrm{otherwise}\ \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{gammasgn} ( x ) = \begin{cases} 1 &amp; \textrm{if}\ \Gamma &gt; 1 \\ -1 &amp; \textrm{if}\ \Gamma &lt; 1 \\ 0 &amp; \textrm{otherwise}\ \end{cases}" data-equation="eq:gamma_sign_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@50b141156b147529227e2eb4247eda81c781dec9/lib/node_modules/@stdlib/math/base/special/gammasgn/docs/img/equation_gamma_sign_function.svg" alt="Sign of the gamma function">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -43,14 +47,30 @@ The [gamma function][@stdlib/math/base/special/gamma] can be computed as the pro
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-gammasgn
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import gammasgn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gammasgn@deno/mod.js';
+var gammasgn = require( '@stdlib/math-base-special-gammasgn' );
 ```
 
 #### gammasgn( x )
@@ -79,7 +99,7 @@ v = gammasgn( NaN );
 
 ## Notes
 
--    The [gamma function][@stdlib/math/base/special/gamma] is not defined for negative integer values (i.e., `gamma(x) === NaN` when `x` is a negative integer). The [natural logarithm of the gamma function][@stdlib/math/base/special/gammaln] is defined for negative integer values (i.e., `gammaln(x) === Infinity` when `x` is a negative integer). Accordingly, in order for the equality `gamma(x) === gammasgn(x) * exp(gammaln(x))` to hold (i.e., return `NaN`), `gammasgn` needs to either return `NaN` or `0`. By convention, this function returns `0`.
+-   The [gamma function][@stdlib/math/base/special/gamma] is not defined for negative integer values (i.e., `gamma(x) === NaN` when `x` is a negative integer). The [natural logarithm of the gamma function][@stdlib/math/base/special/gammaln] is defined for negative integer values (i.e., `gammaln(x) === Infinity` when `x` is a negative integer). Accordingly, in order for the equality `gamma(x) === gammasgn(x) * exp(gammaln(x))` to hold (i.e., return `NaN`), `gammasgn` needs to either return `NaN` or `0`. By convention, this function returns `0`.
 
 </section>
 
@@ -92,8 +112,8 @@ v = gammasgn( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@deno/mod.js';
-import gammasgn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gammasgn@deno/mod.js';
+var linspace = require( '@stdlib/array-base-linspace' );
+var gammasgn = require( '@stdlib/math-base-special-gammasgn' );
 
 var x = linspace( -10.0, 10.0, 100 );
 
@@ -124,7 +144,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -168,7 +188,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -184,9 +204,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-special-gammasgn/main/LICENSE
 
-[@stdlib/math/base/special/gamma]: https://github.com/stdlib-js/math-base-special-gamma/tree/deno
+[@stdlib/math/base/special/gamma]: https://github.com/stdlib-js/math-base-special-gamma
 
-[@stdlib/math/base/special/gammaln]: https://github.com/stdlib-js/math-base-special-gammaln/tree/deno
+[@stdlib/math/base/special/gammaln]: https://github.com/stdlib-js/math-base-special-gammaln
 
 <!-- <related-links> -->
 
