@@ -58,30 +58,38 @@ The [gamma function][@stdlib/math/base/special/gamma] can be computed as the pro
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-special-gammasgn
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var gammasgn = require( '@stdlib/math-base-special-gammasgn' );
+gammasgn = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gammasgn@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var gammasgn = require( 'path/to/vendor/umd/math-base-special-gammasgn/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gammasgn@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.gammasgn;
+})();
+</script>
 ```
 
 #### gammasgn( x )
@@ -122,9 +130,14 @@ v = gammasgn( NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var linspace = require( '@stdlib/array-base-linspace' );
-var gammasgn = require( '@stdlib/math-base-special-gammasgn' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gammasgn@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var x = linspace( -10.0, 10.0, 100 );
 
@@ -132,6 +145,11 @@ var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( 'x: %d, f(x): %d', x[ i ], gammasgn( x[ i ] ) );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -215,9 +233,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-special-gammasgn/main/LICENSE
 
-[@stdlib/math/base/special/gamma]: https://github.com/stdlib-js/math-base-special-gamma
+[@stdlib/math/base/special/gamma]: https://github.com/stdlib-js/math-base-special-gamma/tree/umd
 
-[@stdlib/math/base/special/gammaln]: https://github.com/stdlib-js/math-base-special-gammaln
+[@stdlib/math/base/special/gammaln]: https://github.com/stdlib-js/math-base-special-gammaln/tree/umd
 
 <!-- <related-links> -->
 
