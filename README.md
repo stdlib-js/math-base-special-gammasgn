@@ -65,7 +65,7 @@ The [gamma function][@stdlib/math/base/special/gamma] can be computed as the pro
 ## Usage
 
 ```javascript
-import gammasgn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gammasgn@deno/mod.js';
+import gammasgn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gammasgn@v0.2.0-deno/mod.js';
 ```
 
 #### gammasgn( x )
@@ -108,7 +108,7 @@ v = gammasgn( NaN );
 
 ```javascript
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@deno/mod.js';
-import gammasgn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gammasgn@deno/mod.js';
+import gammasgn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gammasgn@v0.2.0-deno/mod.js';
 
 var x = linspace( -10.0, 10.0, 100 );
 
