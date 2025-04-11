@@ -46,7 +46,7 @@
     "@stdlib/utils-library-manifest": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/array-base-linspace": "^0.2.2",
+    "@stdlib/console-log-each-map": "github:stdlib-js/console-log-each-map#main",
     "@stdlib/math-base-assert-is-positive-zero": "^0.2.2",
     "@stdlib/random-array-uniform": "^0.2.1",
     "@stdlib/utils-try-require": "^0.2.2",
