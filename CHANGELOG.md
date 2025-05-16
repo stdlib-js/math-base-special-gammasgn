@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`696cf19`](https://github.com/stdlib-js/stdlib/commit/696cf194b9ac255ada33dac8bbd3b5cb5dd8f923) - **bench:** adjust input range for uniform path coverage _(by Karan Anand)_
 -   [`5ac2354`](https://github.com/stdlib-js/stdlib/commit/5ac23541c743ae50a46366e9415e7442e70559d7) - **test:** remove redundant fixtures and update tests _(by Karan Anand)_
 -   [`8dc25bb`](https://github.com/stdlib-js/stdlib/commit/8dc25bbbe0a4ad6310ea0f823e812d38a627adad) - **docs:** fix case conditions and clean-up _(by Karan Anand)_
 -   [`dac7fbc`](https://github.com/stdlib-js/stdlib/commit/dac7fbc738bdf94b2cdbe3de731876d4521ee802) - **docs:** replace manual `for` loop in examples [(#6636)](https://github.com/stdlib-js/stdlib/pull/6636) _(by Harsh, Athan Reines)_
