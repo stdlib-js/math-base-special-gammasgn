@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-30)
+## Unreleased (2025-11-08)
 
 <section class="commits">
 
@@ -12,12 +12,13 @@
 
 <details>
 
+-   [`6295b0a`](https://github.com/stdlib-js/stdlib/commit/6295b0a66b76c60f2b4cc5613d61447111cf8b90) - **chore:** add structured package data for `math/base/special/gammasgn` [(#8441)](https://github.com/stdlib-js/stdlib/pull/8441) _(by Pratik, Athan Reines)_
 -   [`696cf19`](https://github.com/stdlib-js/stdlib/commit/696cf194b9ac255ada33dac8bbd3b5cb5dd8f923) - **bench:** adjust input range for uniform path coverage _(by Karan Anand)_
 -   [`5ac2354`](https://github.com/stdlib-js/stdlib/commit/5ac23541c743ae50a46366e9415e7442e70559d7) - **test:** remove redundant fixtures and update tests _(by Karan Anand)_
 -   [`8dc25bb`](https://github.com/stdlib-js/stdlib/commit/8dc25bbbe0a4ad6310ea0f823e812d38a627adad) - **docs:** fix case conditions and clean-up _(by Karan Anand)_
--   [`dac7fbc`](https://github.com/stdlib-js/stdlib/commit/dac7fbc738bdf94b2cdbe3de731876d4521ee802) - **docs:** replace manual `for` loop in examples [(#6636)](https://github.com/stdlib-js/stdlib/pull/6636) _(by Harsh, Athan Reines)_
+-   [`dac7fbc`](https://github.com/stdlib-js/stdlib/commit/dac7fbc738bdf94b2cdbe3de731876d4521ee802) - **docs:** replace manual `for` loop in examples [(#6636)](https://github.com/stdlib-js/stdlib/pull/6636) _(by Harsh Yadav, Athan Reines)_
 -   [`630ddb7`](https://github.com/stdlib-js/stdlib/commit/630ddb777824b5f6e501fda6dadf4ce41dccb964) - **test:** replace equal with strictEqual _(by Karan Anand)_
--   [`90d0d11`](https://github.com/stdlib-js/stdlib/commit/90d0d1193f14ab787e2d75d6f862d03e2105006e) - **chore:** update random value generation and test messages [(#6346)](https://github.com/stdlib-js/stdlib/pull/6346) _(by Harsh)_
+-   [`90d0d11`](https://github.com/stdlib-js/stdlib/commit/90d0d1193f14ab787e2d75d6f862d03e2105006e) - **chore:** update random value generation and test messages [(#6346)](https://github.com/stdlib-js/stdlib/pull/6346) _(by Harsh Yadav)_
 -   [`ba0c854`](https://github.com/stdlib-js/stdlib/commit/ba0c854e87d0e86d0f7739e26095ec0a0f40c36f) - **docs:** fix function names in C example code _(by Philipp Burckhardt)_
 -   [`a3301a2`](https://github.com/stdlib-js/stdlib/commit/a3301a2bde94e8c07888a1db589d189e9ecfc347) - **docs:** update related packages sections [(#4517)](https://github.com/stdlib-js/stdlib/pull/4517) _(by stdlib-bot)_
 -   [`b7867cb`](https://github.com/stdlib-js/stdlib/commit/b7867cbb3a4fc453e19203794402c36f19b264fd) - **chore:** minor clean-up _(by Philipp Burckhardt)_
@@ -34,12 +35,13 @@
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
--   Harsh
+-   Harsh Yadav
 -   Karan Anand
 -   Philipp Burckhardt
+-   Pratik
 
 </section>
 
