@@ -60,6 +60,11 @@ The [gamma function][@stdlib/math/base/special/gamma] can be computed as the pro
 ## Usage
 
 ```javascript
+import gammasgn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gammasgn@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-gammasgn/tags). For example,
+
+```javascript
 import gammasgn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gammasgn@v0.3.1-esm/index.mjs';
 ```
 
@@ -109,7 +114,7 @@ v = gammasgn( NaN );
 
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import gammasgn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gammasgn@v0.3.1-esm/index.mjs';
+import gammasgn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gammasgn@esm/index.mjs';
 
 var opts = {
     'dtype': 'float64'
